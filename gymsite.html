@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life_Vision_Fitness</title>
+ </head>
+ <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="gymstyle.css">
+<style>
+    /* css reset */
+body{
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+    background: url('backg.webp');
+    background-size: 100%;
+}
+.left{
+    /* border: 2px solid red; */
+    display: inline-block;
+    position: absolute;
+    left: 41px;
+    top: 30px;
+}
+.left div{
+    line-height: 18px;
+    font-size: 19px;
+    text-align: center;
+}
+.left img{
+width: 144px;
+/* invert change the color of black img to white and white to black */
+filter: invert(100%);
+margin-left: 7%;
+}
+.mid{
+    /* border: 2px solid rgb(160, 240, 1); */
+    display: block;
+    width: 50%;
+    margin:30px 27%;
+}
+.right{
+    /* border: 2px solid rgb(249, 249, 249); */
+    display: inline-block;
+    position: absolute;
+    right: 47px;
+    top: 30px;
+}
+.navbar{
+    display: inline-block;
+}
+.navbar li{
+    display: inline-block;
+}
+.navbar li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 20px;
+}
+.navbar li a:hover,.navbar li a.active{
+    text-decoration: underline;
+    color: grey;
+}
+.btn{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0px 9px;
+    color: white;
+    background-color: black;
+    padding: 4px 15px;
+    border: 2px solid rgb(70, 67, 67);
+    border-radius: 7px;
+    font-size: 15px;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(73, 63, 63);
+}
+.container{
+    /* border: 2px solid greenyellow;
+    margin: 2px 2px;
+    padding: 41px 50px;
+    width: 35%;
+    border-radius: 15px;
+    margin-top: 130px;
+    margin-left: 60px; */
+
+
+    border: 6px solid #fcfcfc;
+    padding: 41px 50px;
+    width: 35%;
+    border-radius: 15px;
+    margin-top: 130px;
+    margin: auto 25%;
+}
+.form-group input{
+    text-align: center;
+    display: block;
+    width: 442px;
+    padding: 6px;
+    border: 2px solid black;
+    margin: 6px auto;
+    border-radius: 5px;
+    font-size: 19px;
+}
+.container h1{
+text-align: center;
+}
+.btn1{
+/* It is used to center the submit button */
+width: 23%;
+margin: auto;
+display: block;
+font-family: 'Ubuntu', sans-serif;
+color: white;
+background-color: black;
+border: 8px solid black;
+border-radius: 7px;
+font-size: 17px;
+cursor: pointer;
+border: 2px solid rgb(122, 120, 120);
+}
+.btn1:hover{
+    background-color: rgb(73, 63, 63);
+    border-color:  rgb(73, 63, 63);
+}
+</style>
+<body>
+    <header class="header">
+        <!-- left box for logo -->
+        <div class="left">
+            <img src="gymlogo.webp" alt="logo">
+            <div>Life_Vision_Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li> <a href="#" class="active">Home</a></li>
+                <li> <a href="#">About</a></li>
+                <li> <a href="#">Fitness Calculator</a> </li>
+                <li> <a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button><button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1>Join the best Gym of Haldia now</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Phone number">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter your Locality">
+            </div>
+            <button class="btn1">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
